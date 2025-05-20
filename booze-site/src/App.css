@@ -1,0 +1,114 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.app-container {
+  background: linear-gradient(135deg, #1e3c72 0%, #2a5298 50%, #6a0572 100%);
+  min-height: 100vh;
+  color: #fff;
+  padding: 2rem;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+.input-section, .output-section, .favorites-section {
+  background: rgba(34, 34, 68, 0.85);
+  border-radius: 1em;
+  margin: 1.5em auto;
+  padding: 2em;
+  max-width: 500px;
+  box-shadow: 0 4px 24px 0 rgba(0,0,0,0.2);
+}
+.input-section form label {
+  display: block;
+  margin-bottom: 1em;
+  text-align: left;
+}
+.input-section input, .input-section select {
+  width: 100%;
+  padding: 0.5em;
+  margin-top: 0.5em;
+  border-radius: 0.5em;
+  border: none;
+  font-size: 1em;
+}
+.juice-row {
+  display: flex;
+  gap: 0.5em;
+  margin-bottom: 0.5em;
+}
+button {
+  background: #2a5298;
+  color: #fff;
+  border: none;
+  border-radius: 0.5em;
+  padding: 0.5em 1em;
+  margin-top: 0.5em;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+button:hover {
+  background: #6a0572;
+}
+.recipe-card {
+  background: rgba(0,0,0,0.3);
+  border-radius: 1em;
+  padding: 1.5em;
+  margin-top: 1em;
+}
+.recipe-card img {
+  border-radius: 0.5em;
+  margin-bottom: 1em;
+}
+.error {
+  color: #ff6b6b;
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+.favorites-section ul {
+  list-style: none;
+  padding: 0;
+}
+.favorites-section li {
+  background: #1e3c72;
+  margin: 0.5em 0;
+  padding: 0.5em 1em;
+  border-radius: 0.5em;
+}
